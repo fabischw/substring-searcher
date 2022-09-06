@@ -10,7 +10,7 @@ targetfile = "abi_Ideen.txt"#Detei, in welche Ergebnisse gespeichert werden
 excepted_words = ["Abitur","abitur"]#Worte, welche aussortiert werden sollen
 
 #HIER MAXIMALE LÄNGE EINGEBEN
-max_len = None#Maximale Länge
+max_len = 15#Maximale Länge
 if max_len == None:
     max_len = 10000000
 
