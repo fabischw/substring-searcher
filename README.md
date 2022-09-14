@@ -1,5 +1,5 @@
 [EN] This program is currently only available in german, sorry.                                                     
-[DE] Dieses Programm diesnt dazu, (fast) alle deutschen Wörter nach einem oder mehrern substrings zu durchsuchen. Ich besitze keine Rechte an der Wortliste, welche ich im Internet gefunden habe.
+[DE] Dieses Programm dient dazu, (fast) alle deutschen Wörter nach einem oder mehreren substrings zu durchsuchen. Ich besitze keine Rechte an der Wortliste, welche ich im Internet gefunden habe.
 
 -Nutzung generelle Version: Einfach herunterladen, input.py starten oder das Modul aus substring_searcher.py in eigenen Code importieren.(Bitte beachten Sie die Lizenz!)
 
