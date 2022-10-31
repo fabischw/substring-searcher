@@ -1,5 +1,6 @@
 # Spiel, bei welchem geraten wird, wie viele Wörter es im Deutschen mit gewissen Wörtern drin gibt.
 
+
 import random
 
 possible_subwords_arr = [
@@ -84,7 +85,6 @@ for searched_word in searched_word_list:
             #Wort in targetfile schreiben
             if write == True and len(element) < max_len:
                 success_count = success_count + 1
-                print(element)
                 file2 = open(targetfile, "a")
                 file2.write(str(element))
                 file2.close()
@@ -95,7 +95,7 @@ for searched_word in searched_word_list:
 
 print("loading complete.")
 
-print("Wie viele Wörter gibt es, die das Wort",chosen_word,"enthalten? ")
+print("Wie viele Wörter gibt es, die das Wort '",chosen_word,"' enthalten? ")
 
 schaetzung = input("Schätzung abgeben: ")
 
@@ -126,12 +126,12 @@ print("Sie haben",points,"Punkte gutgeschrieben bekommen.")
 
 
 with open("punkte.txt","r") as file2:
-    punkte_stored = file2.readlines()
+    punkte_stored = file2.readline()
     try:
         punkte_stored = int(punkte_stored)
     except:
         print("an error has occured while saving your points")
         quit()
 
-with open("punkte.txt","r") as file3:
-    file3.write(punkte_stored+points)
+with open("punkte.txt","w") as file3:
+    file3.write(str(punkte_stored+points))
